@@ -25,7 +25,7 @@ public class BaseEntity {
     @Column(nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP")
     private LocalDateTime updatedAt;
 
-    @Comment("논리 삭제 여부")
+    @Comment("삭제 여부")
     @Column(nullable = false)
     private boolean deleted = false;
 }
